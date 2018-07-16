@@ -12,6 +12,7 @@
 
 ### Dev Setup
 - Clone this repo (SSH Prefered)
+- Run `npm install` in the dir.
 - You can then go ahead and try doing `npm start`. If this doesn't work, try `npm audit fix`. This should fix any dependency issues.
 
 Feel free to change / add the readme if you come across anything that work / didn't work for you.
