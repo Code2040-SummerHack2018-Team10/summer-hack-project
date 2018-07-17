@@ -14,21 +14,21 @@ export const Tabs = createBottomTabNavigator({
     screen: Appointments,
     navigationOptions: {
       tabBarLabel: 'Appointments',
-      //tabBarIcon: ({ tintColor }) => <Icon name="list" size={35} color={tintColor} />
+      tabBarIcon: ({ tintColor }) => <Icon name="date-range" size={35} color={tintColor} />
     },
   },
   'Chat': {
     screen: Chat,
     navigationOptions: {
       tabBarLabel: 'Chat',
-      //tabBarIcon: ({ tintColor }) => <Icon name="list" size={35} color={tintColor} />
+      tabBarIcon: ({ tintColor }) => <Icon name="chat-bubble-outline" size={35} color={tintColor} />
     },
   },
   'Notes': {
     screen: Notes,
     navigationOptions: {
       tabBarLabel: 'Notes',
-      //tabBarIcon: ({ tintColor }) => <Icon name="list" size={35} color={tintColor} />
+      tabBarIcon: ({ tintColor }) => <Icon name="assignment" size={35} color={tintColor} />
     },
   },
 });
