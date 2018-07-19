@@ -41,7 +41,7 @@ export default class Notes extends Component {
       <View style={styles.container}>
         <Header
           statusBarProps={{ barStyle: 'light-content' }}
-          leftComponent={{ icon: 'person', color: '#fff' }}
+          leftComponent={{ icon: 'person', color: '#fff', onPress: () => this.props.navigation.navigate('Profile')}}
           centerComponent={{ text: 'Notes', style: { color: '#fff' } }}
         />
         <FlatList

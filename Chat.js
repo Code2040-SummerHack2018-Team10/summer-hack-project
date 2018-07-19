@@ -41,9 +41,9 @@ export default class Chat extends Component {
       <View style={styles.container}>
         <Header
           statusBarProps={{ barStyle: 'light-content' }}
-          leftComponent={{ icon: 'person', color: '#fff' }}
+          leftComponent={{ icon: 'person', color: '#fff', onPress: () => this.props.navigation.navigate('Profile')}}
           centerComponent={{ text: 'Chat', style: { color: '#fff' } }}
-          rightComponent={{ icon: 'add', color: '#fff' }}
+          rightComponent={{ icon: 'add', color: '#fff', onPress: () => this.props.navigation.navigate('AddChat')}}
         />
         <FlatList
           data={this.state.books}

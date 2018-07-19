@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import { createStackNavigator } from 'react-navigation';
+import AddAppointment from './AddAppointment';
 import {
   StatusBar,
   StyleSheet,
@@ -53,9 +55,9 @@ export default class Appointments extends Component {
       <View style={styles.container}>
         <Header
           statusBarProps={{ barStyle: 'light-content' }}
-          leftComponent={{ icon: 'person', color: '#fff' }}
+          leftComponent={{ icon: 'person', color: '#fff', onPress: () => this.props.navigation.navigate('Profile')}}
           centerComponent={{ text: 'Appointments', style: { color: '#fff' } }}
-          rightComponent={{ icon: 'add', color: '#fff' }}
+          rightComponent={{ icon: 'add', color: '#fff', onPress: () => this.props.navigation.navigate('AddAppointment')}}
         />
         <FlatList
           data={this.state.books}
